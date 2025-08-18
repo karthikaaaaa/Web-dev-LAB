@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: left;
+        }
+        th {
+            background-color: #cccccc;
+        }
+        input, select, textarea {
+            width: 200px;
+            padding: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Elements Demonstration</h1>
+    
+    <form>
+        <table>
+            <tr>
+                <th>Field Type</th>
+                <th>Example</th>
+            </tr>
+            
+            <tr>
+                <td><strong>Text Input</strong></td>
+                <td>
+                    <input type="text" placeholder="Enter your name" value="John Doe">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><strong>Email Input</strong></td>
+                <td>
+                    <input type="email" placeholder="Enter your email" value="john@example.com">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><strong>Password Input</strong></td>
+                <td>
+                    <input type="password" placeholder="Enter password" value="password123">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><strong>Radio Buttons</strong></td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            
+            <tr>
+                <td><strong>Checkboxes</strong></td>
+                <td>
+                    <input type="checkbox" name="interests" value="reading" checked> Reading
+                    <input type="checkbox" name="interests" value="gaming"> Gaming
+                    <input type="checkbox" name="interests" value="sports"> Sports
+                    <input type="checkbox" name="interests" value="music"> Music
+                </td>
+            </tr>
+            
+            <tr>
+                <td><strong>Dropdown (Select)</strong></td>
+                <td>
+                    <select>
+                        <option value="">Select your country</option>
+                        <option value="usa" selected>United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <option value="germany">Germany</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><strong>Textarea</strong></td>
+                <td>
+                    <textarea rows="4" placeholder="Enter your message here...">This is a sample message in the textarea.</textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><strong>Number Input</strong></td>
+                <td>
+                    <input type="number" min="0" max="120" value="25" placeholder="Enter age">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><strong>Date Input</strong></td>
+                <td>
+                    <input type="date" value="2024-01-15">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><strong>File Input</strong></td>
+                <td>
+                    <input type="file" accept=".pdf,.doc,.docx">
+                </td>
+            </tr>
+        </table>
+        
+        <div style="text-align: center;">
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+            <button type="button">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>
