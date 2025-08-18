@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Picture</title>
+    <style>
+        body {
+            background-color: grey; /* Better than bgcolor attribute */
+        }
+        p.red-text {
+            color: red;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Headings -->
+    <h1>This is an h1 size text</h1>
+    <h2>This is an h2 size text</h2>
+    <h3>This is an h3 size text</h3>
+    <h4>This is an h4 size text</h4>
+    <h5>This is an h5 size text</h5>
+    <h6>This is an h6 size text</h6>
+
+    <!-- Paragraphs -->
+    <p>This is a sample program using p tag</p>
+    <p class="red-text">This is text using inline css code in p</p>
+
+    <!-- Marquee -->
+    <h1>A Living Room</h1>
+    <p>Watch the image scroll</p>
+    <marquee behavior="alternate" scrollamount="5" scrolldelay="50" loop="-1" onmouseover="this.stop();" onmouseout="this.start();" bgcolor="lightblue">
+        <img src="living.jpg" alt="A living room" width="500">
+    </marquee>
+
+    <hr>
+
+    <!-- Link -->
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+    <!-- Shopping list -->
+    <h2>Shopping cart for the space</h2>
+    <ol>
+        <li>Cushions</li>
+        <li>Coffee table</li>
+        <li>Blanket</li>
+        <li>TV Setup</li>
+        <li>Book area</li>
+    </ol>
+
+    <!-- Table -->
+    <h2>This is a simple table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Rate</th>
+        </tr>
+        <tr>
+            <td>Cushions</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Coffee table</td>
+            <td>70000</td>
+        </tr>
+    </table>
+
+    <!-- Blockquote -->
+    <blockquote>"This is a blockquote" - Example</blockquote>
+
+    <!-- Preformatted -->
+    <pre>
+This is a preformatted text
+        keeps 
+             spaces and line breaks as such
+    </pre>
+</body>
+</html>
